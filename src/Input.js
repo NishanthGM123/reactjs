@@ -1,15 +1,12 @@
 import React from 'react';
 
 function Input(props) {
-  const { myName, handleInputChange } = props;
+  const { myName, myAge, myAddress, handleInputChange } = props;
   return (
     <div>
-      <input
-        type="text"
-        placeholder="First Name of the user..."
-        value={myName}
-        onChange={handleInputChange}
-      />
+
+
+        
     </div>
   )
 }

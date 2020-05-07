@@ -1,38 +1,34 @@
 import React from 'react';
-import Input from './Input';
+//import Input from './Input';
 
-// Stateful/ Container component
 class Counter extends React.Component {
-
-    
   state = {
-    name: ""
-    
+    firstName: '',
+    age: [],
+    address: ''
   };
-  
-
-  
 
   handleInputValues = (event) => {
     this.setState({
-      name: event.target.value,
+      firstName: event.target.value,
+      age:event.target.value,
+      address: event.target.value
     });
   }
 
+ 
+
   render() {
-    const { name } = this.state;
+    const { firstName,age,address } = this.state;
     return (
       <div>
-          <form>
-
-            
-            <Input myName={name} handleInputChange={this.handleInputValues} />
-
-
-          </form>
-          
-        
-        
+        <h2>State Uplift In Form Component</h2>
+        <label>Name:</label>
+        <input myName={firstName}  handleInputChange={this.handleInputValues} /><br />
+        <label>Age:</label>
+        <input  myAge={age}  handleInputChange={this.handleInputValues} /><br />
+        <label>Address:</label> 
+        <input  myAddress={address} handleInputChange={this.handleInputValues} />
       </div>
     )
   }
