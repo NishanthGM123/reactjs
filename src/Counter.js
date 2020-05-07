@@ -25,7 +25,7 @@ class Counter extends React.Component {
       <div>
           <form>
 
-            <label>Name:</label>
+            
             <Input myName={name} handleInputChange={this.handleInputValues} />
 
 
