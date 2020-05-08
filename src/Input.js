@@ -1,12 +1,12 @@
 import React from 'react';
 
 function Input(props) {
-  const { myName, myAge, myAddress, handleInputChange } = props;
+  const {myAge ,onageChange}=props
   return (
     <div>
+      <input type="text"  value={myAge} onChange={onageChange}></input>
 
 
-        
     </div>
   )
 }

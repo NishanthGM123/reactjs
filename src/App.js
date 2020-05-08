@@ -1,12 +1,13 @@
 import React from 'react';
-import Counter from './Counter';
-
+//import Count from './Count';
+import Home from './Home';
 
 
 function App() {
   return (
     <div>Welcome to reactjs tutorials
-    <Counter />
+    {/*<Count />*/}
+    <Home />
     </div>
   );
 }
